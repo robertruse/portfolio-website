@@ -4,9 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Robert Ruse | Web Developer</title>
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -15,30 +21,42 @@
       integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
     <!-- Navbar -->
-    <div class="navbar">
+    <div class="navbar border-hr">
       <div class="container flex">
         <h1>RR</h1>
         <nav>
-          <ul>
+          <ul class="flex">
             <li><a href="#skills">Skills</a></li>
             <li><a href="#work">Work</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li></li>
           </ul>
         </nav>
+        <!-- <a href="#" class="btn btn-sm">Resume</a> -->
       </div>
     </div>
 
     <!-- Showcase -->
-    <section class="showcase">
+    <section class="showcase flex">
       <div class="container flex">
         <div class="showcase-text">
-          <h1>Hi, my name is</h1>
-          <h2>Robert Ruse.</h2>
-          <h3>I build things for the web.</h3>
+          <h1>Hi, my name is Robert Ruse.</h1>
+          <h2>I build things for the web.</h2>
           <p>
             I'm a web developer with a passion for front end development and
             design. I love learning new and better ways to create seamless user
@@ -48,52 +66,47 @@
             as I want to learn. At the end of the day, my primary goal is to
             create something awesome with people that bring out the best in me.
           </p>
-          <a href="#contact" class="btn btn-dark">Get in touch</a>
+          <a href="#contact" class="btn">Get in touch</a>
+          <a href="#contact" class="btn btn-outline-dark">Resume</a>
         </div>
       </div>
     </section>
 
     <!-- Skills -->
-    <section class="skills" id="skills">
+    <section class="skills border-hr" id="skills">
       <div class="container flex">
         <h2>Skills</h2>
         <div class="grid grid-3">
-          <div class="card">
+          <div class="category flex">
             <i class="fas fa-laptop-code fa-3x"></i>
+            <h3>Languages</h3>
             <ul>
-              <li><h3>Languages</h3></li>
-              <li></i></li>
-            </ul>
-            <ul>
-              <li>JavaScript</li>
-              <li>CSS3</li>
-              <li>HTML5</li>
-              <li>Java</li>
+              <li class="flex">JavaScript</li>
+              <li class="flex">CSS3</li>
+              <li class="flex">HTML5</li>
+              <li class="flex">Java</li>
             </ul>
           </div>
 
-          <div class="card">
+          <div class="category flex">
             <i class="fas fa-tools fa-3x"></i>
+            <h3>Tools</h3>
             <ul>
-              <li><h3>Tools</h3></li>
-              <li></li>
-            </ul>
-            <ul>
-              <li>Git & Github</li>
-              <li>Chrome DevTools</li>
-              <li>VSCode</li>
-              <li>Linux</li>
+              <li class="flex">Git & Github</li>
+              <li class="flex">Chrome DevTools</li>
+              <li class="flex">VSCode</li>
+              <li class="flex">Linux</li>
             </ul>
           </div>
 
-          <div class="card">
+          <div class="category flex">
             <i class="fas fa-pencil-ruler"></i>
             <h3>Design</h3>
             <ul>
-              <li>Adobe Photoshop</li>
-              <li>Adobe Illustrator</li>
-              <li>Autodesk 3DS Max</li>
-              <li>Unreal Engine</li>
+              <li class="flex">Adobe Photoshop</li>
+              <li class="flex">Adobe Illustrator</li>
+              <li class="flex">Adobe XD</li>
+              <li class="flex">Autodesk 3DS Max</li>
             </ul>
           </div>
         </div>
@@ -101,23 +114,14 @@
     </section>
 
     <!-- Work -->
-    <section class="work" id="work">
+    <section class="work border-bottom" id="work">
       <div class="container flex">
         <h2>Work</h2>
         <article class="project grid grid-3" id="project-1">
-          <div class="window">
-            <ul>
-              <li><i class="fas fa-minus"></i></li>
-              <li><i class="far fa-window-maximize"></i></li>
-              <li><i class="fas fa-times"></i></li>
-            </ul>
-            <img src="images/pr-1.png" alt="" />
-          </div>
-          <div class="project-text">
-            <h3>Featured project</h3>
+          <div class="project-info">
             <div class="card">
-              <ul>
-                <li><h4>Calculator</h4></li>
+              <ul class="card-title">
+                <li><h3>Calculator</h3></li>
                 <li>
                   <a href="#"><i class="fab fa-github"></i></a>
                 </li>
@@ -129,21 +133,30 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
                 possimus eius cupiditate aspernatur libero sapiente.
               </p>
-              <ul>
+              <ul class="card-languages">
                 <li>HTML5</li>
+                <li>|</li>
                 <li>CSS3</li>
+                <li>|</li>
                 <li>JavaScript</li>
               </ul>
             </div>
+          </div>
+          <div class="project-pic flex">
+            <a href="#" class="flex"
+              ><img src="images/pr-calculator.png" alt=""
+            /></a>
           </div>
         </article>
 
         <article class="project grid grid-3" id="project-2">
-          <div class="project-text">
-            <h3>Featured project</h3>
+          <div class="project-pic flex">
+            <a href="#" class="flex"><img src="images/pr-rpc.png" alt="" /></a>
+          </div>
+          <div class="project-info">
             <div class="card">
-              <ul>
-                <li><h4>Rock Paper Scissors</h4></li>
+              <ul class="card-title">
+                <li><h3>Rock Paper Scissors</h3></li>
                 <li>
                   <a href="#"><i class="fab fa-github"></i></a>
                 </li>
@@ -155,39 +168,153 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
                 possimus eius cupiditate aspernatur libero sapiente.
               </p>
-              <ul>
+              <ul class="card-languages">
                 <li>HTML5</li>
+                <li>|</li>
                 <li>CSS3</li>
+                <li>|</li>
                 <li>JavaScript</li>
               </ul>
             </div>
           </div>
-          <div class="window">
-            <ul>
-              <li><i class="fas fa-minus"></i></li>
-              <li><i class="far fa-window-maximize"></i></li>
-              <li><i class="fas fa-times"></i></li>
-            </ul>
-            <img src="images/pr-2.png" alt="" />
+        </article>
+
+        <article class="project grid grid-3" id="project-3">
+          <div class="project-info">
+            <div class="card">
+              <ul class="card-title">
+                <li><h3>Google Homepage</h3></li>
+                <li>
+                  <a href="#"><i class="fab fa-github"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </li>
+              </ul>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
+                possimus eius cupiditate aspernatur libero sapiente.
+              </p>
+              <ul class="card-languages">
+                <li>HTML5</li>
+                <li>|</li>
+                <li>CSS3</li>
+                <li>|</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+          </div>
+          <div class="project-pic flex">
+            <a href="#" class="flex"
+              ><img src="images/pr-google.png" alt=""
+            /></a>
           </div>
         </article>
-        <div class="project grid grid-3"></div>
       </div>
     </section>
 
+    <!-- Other work-->
+    <section class="work border-bottom" id="other-work">
+      <div class="container flex">
+        <h2>Other work</h2>
+        <div class="grid grid-3">
+          <div class="card">
+            <ul class="card-title">
+              <li><h3>Netflix Homepage</h3></li>
+              <li>
+                <a href="#"><i class="fab fa-github"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+              </li>
+            </ul>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
+              possimus eius cupiditate aspernatur libero sapiente.
+            </p>
+            <ul class="card-languages">
+              <li>HTML5</li>
+              <li>|</li>
+              <li>CSS3</li>
+              <li>|</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <ul class="card-title">
+              <li><h3>Pluralsight Homepage</h3></li>
+              <li>
+                <a href="#"><i class="fab fa-github"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+              </li>
+            </ul>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
+              possimus eius cupiditate aspernatur libero sapiente.
+            </p>
+            <ul class="card-languages">
+              <li>HTML5</li>
+              <li>|</li>
+              <li>CSS3</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <ul class="card-title">
+              <li><h3>Twitter Homepage</h3></li>
+              <li>
+                <a href="#"><i class="fab fa-github"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+              </li>
+            </ul>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
+              possimus eius cupiditate aspernatur libero sapiente.
+            </p>
+            <ul class="card-languages">
+              <li>HTML5</li>
+              <li>|</li>
+              <li>CSS3</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
     <section class="contact" id="contact">
       <div class="container flex">
-        <h2>Contact</h2>
-        <h3>Get in touch</h3>
-        <p>Have a project in mind or just want to say hi?<br>Feel free to send me a message!</p>
-        <a href="#" class="btn btn-outline">Résumé</a>
+        <h2>Get in touch</h2>
+        <p>
+          Have a project in mind or just want to say hi?<br />Feel free to send
+          me a message!
+        </p>
+        <!-- <a href="#" class="btn btn-outline">Résumé</a> -->
         <ul>
-          <li><i class="far fa-envelope"></i>robert.a.ruse@gmail.com</li>
-          <li><i class="fas fa-mobile-alt"></i>+40 755 490 470</li>
-          <li><a href="https://github.com/robertruse" target="_blank"><i class="fab fa-github"></i>github.com/robertruse</a></li>
-          <li><a href="https://www.linkedin.com/in/robertruse/" target="_blank"><i class="fab fa-linkedin"></i>linkedin.com/in/robertruse</a></li>
+          <li><i class="fas fa-envelope"></i></i>robert.a.ruse@gmail.com</li>
+          <li><i class="fas fa-phone-square-alt"></i></i>+40 755 490 470</li>
+          <li>
+            <a href="https://github.com/robertruse" target="_blank"
+              ><i class="fab fa-github-square"></i>github.com/robertruse</a
+            >
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/robertruse/" target="_blank"
+              ><i class="fab fa-linkedin"></i>linkedin.com/in/robertruse</a
+            >
+          </li>
         </ul>
       </div>
     </section>
+    <!-- <footer class="footer">
+      <div class="container flex">
+        <h4>Designed and built by Robert Ruse</h4>
+      </div>
+    </footer> -->
   </body>
 </html>

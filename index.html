@@ -4,39 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Robert Ruse | Web Developer</title>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
       integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
       crossorigin="anonymous"
     />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
 
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
     <!-- Navbar -->
-    <div class="navbar border-hr">
+    <div class="navbar border-bottom">
       <div class="container flex">
         <h1>RR</h1>
         <nav>
@@ -47,15 +33,14 @@
             <li></li>
           </ul>
         </nav>
-        <!-- <a href="#" class="btn btn-sm">Resume</a> -->
       </div>
     </div>
 
     <!-- Showcase -->
-    <section class="showcase flex">
-      <div class="container flex">
+    <section class="showcase flex border-bottom">
+      <div class="container">
         <div class="showcase-text">
-          <h1>Hi, my name is Robert Ruse.</h1>
+          <h1>Hi, my name is <span>Robert Ruse.</span></h1>
           <h2>I build things for the web.</h2>
           <p>
             I'm a web developer with a passion for front end development and
@@ -66,14 +51,14 @@
             as I want to learn. At the end of the day, my primary goal is to
             create something awesome with people that bring out the best in me.
           </p>
-          <a href="#contact" class="btn">Get in touch</a>
-          <a href="#contact" class="btn btn-outline-dark">Resume</a>
         </div>
+        <a href="#contact" class="btn">Get in touch</a>
+        <a href="#" class="btn btn-outline">Résumé</a>
       </div>
     </section>
 
     <!-- Skills -->
-    <section class="skills border-hr" id="skills">
+    <section class="skills border-bottom" id="skills">
       <div class="container flex">
         <h2>Skills</h2>
         <div class="grid grid-3">
@@ -81,10 +66,10 @@
             <i class="fas fa-laptop-code fa-3x"></i>
             <h3>Languages</h3>
             <ul>
-              <li class="flex">JavaScript</li>
-              <li class="flex">CSS3</li>
-              <li class="flex">HTML5</li>
-              <li class="flex">Java</li>
+              <li>JavaScript</li>
+              <li>CSS3</li>
+              <li>HTML5</li>
+              <li>Java</li>
             </ul>
           </div>
 
@@ -92,10 +77,10 @@
             <i class="fas fa-tools fa-3x"></i>
             <h3>Tools</h3>
             <ul>
-              <li class="flex">Git & Github</li>
-              <li class="flex">Chrome DevTools</li>
-              <li class="flex">VSCode</li>
-              <li class="flex">Linux</li>
+              <li>Git & Github</li>
+              <li>Chrome DevTools</li>
+              <li>VSCode</li>
+              <li>Linux</li>
             </ul>
           </div>
 
@@ -103,10 +88,10 @@
             <i class="fas fa-pencil-ruler"></i>
             <h3>Design</h3>
             <ul>
-              <li class="flex">Adobe Photoshop</li>
-              <li class="flex">Adobe Illustrator</li>
-              <li class="flex">Adobe XD</li>
-              <li class="flex">Autodesk 3DS Max</li>
+              <li>Figma</li>
+              <li>Adobe Photoshop</li>
+              <li>Adobe Illustrator</li>        
+              <li>Autodesk 3DS Max</li>
             </ul>
           </div>
         </div>
@@ -117,42 +102,37 @@
     <section class="work border-bottom" id="work">
       <div class="container flex">
         <h2>Work</h2>
-        <article class="project grid grid-3" id="project-1">
+        <article class="project" id="project-1">
           <div class="project-info">
-            <div class="card">
+            <div >
               <ul class="card-title">
                 <li><h3>Calculator</h3></li>
-                <li>
+                <!-- <li>
                   <a href="#"><i class="fab fa-github"></i></a>
                 </li>
                 <li>
                   <a href="#"><i class="fas fa-external-link-alt"></i></a>
-                </li>
+                </li> -->
               </ul>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
                 possimus eius cupiditate aspernatur libero sapiente.
               </p>
               <ul class="card-languages">
-                <li>HTML5</li>
-                <li>|</li>
+                <li>HTML5</li>                
                 <li>CSS3</li>
-                <li>|</li>
                 <li>JavaScript</li>
               </ul>
+              <a href="#" class="btn btn-sm">Live site</a>
+              <a href="#" class="btn btn-sm btn-outline">GitHub</a>
             </div>
           </div>
-          <div class="project-pic flex">
-            <a href="#" class="flex"
+          <a href="#" class="project-image flex"
               ><img src="images/pr-calculator.png" alt=""
             /></a>
-          </div>
         </article>
 
-        <article class="project grid grid-3" id="project-2">
-          <div class="project-pic flex">
-            <a href="#" class="flex"><img src="images/pr-rpc.png" alt="" /></a>
-          </div>
+        <article class="project" id="project-2">
           <div class="project-info">
             <div class="card">
               <ul class="card-title">
@@ -170,16 +150,16 @@
               </p>
               <ul class="card-languages">
                 <li>HTML5</li>
-                <li>|</li>
                 <li>CSS3</li>
-                <li>|</li>
                 <li>JavaScript</li>
               </ul>
+              
             </div>
           </div>
+          <a href="#" class="project-image flex"><img src="images/pr-rpc.png" alt="" /></a>
         </article>
 
-        <article class="project grid grid-3" id="project-3">
+        <article class="project" id="project-3">
           <div class="project-info">
             <div class="card">
               <ul class="card-title">
@@ -197,18 +177,16 @@
               </p>
               <ul class="card-languages">
                 <li>HTML5</li>
-                <li>|</li>
                 <li>CSS3</li>
-                <li>|</li>
                 <li>JavaScript</li>
               </ul>
+              <a href="#" class="btn btn-sm">Live site</a>
+              <a href="#" class="btn btn-sm btn-outline">GitHub</a>
             </div>
           </div>
-          <div class="project-pic flex">
-            <a href="#" class="flex"
+          <a href="#" class="project-image flex"
               ><img src="images/pr-google.png" alt=""
             /></a>
-          </div>
         </article>
       </div>
     </section>
@@ -234,16 +212,14 @@
             </p>
             <ul class="card-languages">
               <li>HTML5</li>
-              <li>|</li>
               <li>CSS3</li>
-              <li>|</li>
               <li>JavaScript</li>
             </ul>
           </div>
 
           <div class="card">
             <ul class="card-title">
-              <li><h3>Pluralsight Homepage</h3></li>
+              <li><h3>Pluralsight Login</h3></li>
               <li>
                 <a href="#"><i class="fab fa-github"></i></a>
               </li>
@@ -257,7 +233,6 @@
             </p>
             <ul class="card-languages">
               <li>HTML5</li>
-              <li>|</li>
               <li>CSS3</li>
             </ul>
           </div>
@@ -278,23 +253,23 @@
             </p>
             <ul class="card-languages">
               <li>HTML5</li>
-              <li>|</li>
               <li>CSS3</li>
             </ul>
+            <a href="#" class="btn btn-sm">Live site</a>
+            <a href="#" class="btn btn-sm btn-outline">GitHub</a>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Contact -->
-    <section class="contact" id="contact">
-      <div class="container flex">
+    <section class="contact flex border-bottom" id="contact">
+      <div class="container">
         <h2>Get in touch</h2>
         <p>
           Have a project in mind or just want to say hi?<br />Feel free to send
           me a message!
         </p>
-        <!-- <a href="#" class="btn btn-outline">Résumé</a> -->
         <ul>
           <li><i class="fas fa-envelope"></i></i>robert.a.ruse@gmail.com</li>
           <li><i class="fas fa-phone-square-alt"></i></i>+40 755 490 470</li>
@@ -311,10 +286,12 @@
         </ul>
       </div>
     </section>
-    <!-- <footer class="footer">
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
       <div class="container flex">
-        <h4>Designed and built by Robert Ruse</h4>
+        <p>© Robert Ruse 2020</p>
       </div>
-    </footer> -->
+    </footer>
   </body>
 </html>

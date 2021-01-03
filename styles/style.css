@@ -1,6 +1,8 @@
 :root {
   --primary-color: #047aed;
   --primary-color: #00ad9f;
+  --primary-color: linear-gradient(90deg, #007cf0, #00dfd8);
+
   --secondary-color: #1c3fa8;
   --dark-color: #002240;
   --light-color: #f4f4f4;
@@ -61,8 +63,9 @@ h2 {
 
 h3 {
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 600;
   font-size: clamp(1.5rem, 5vw, 2rem);
+  color: var(--primary-color);
 }
 
 p {
@@ -98,7 +101,10 @@ img {
   position: fixed;
   top: 0;
   z-index: 2;
-  background: var(--white);
+  background: rgba(255, 255, 255, 0.8);
+
+  -webkit-backdrop-filter: saturate(180%) blur(5px);
+  backdrop-filter: saturate(180%) blur(5px);
 }
 
 .navbar h1 {
@@ -153,7 +159,7 @@ nav a:hover ~ .nav-border {
 }
 
 .showcase h1 span {
-  color: var(--black);
+  color: var(--primary-color);
   white-space: nowrap;
 }
 
@@ -275,7 +281,6 @@ nav a:hover ~ .nav-border {
 .project img {
   border-radius: 7.5px;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
-  /* box-shadow: 0 16px 60px rgba(0, 0, 0, 0.2); */
   filter: gray; /* IE6-9 */
   -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
   filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */

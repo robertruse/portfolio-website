@@ -25,34 +25,36 @@
   display: inline-block;
   padding: 10px 30px;
   background: var(--black);
-  box-shadow: inset 0px 0px 0px 1px var(--black);
   color: var(--white);
   text-align: center;
   border-radius: 5px;
-  cursor: pointer;
   margin-right: 10px;
   margin-bottom: 15px;
-}
-
-.btn:hover {
-  color: var(--black);
-  background: var(--white);
-  box-shadow: inset 0px 0px 0px 2px var(--black);
-}
-
-.btn-sm {
-  padding: 5px 20px;
+  cursor: pointer;
+  border: 1px solid var(--black);
 }
 
 .btn-outline {
   color: var(--black);
   background: var(--white);
-  box-shadow: inset 0px 0px 0px 1px var(--dark-gray);
-  -ms-transition: box-shadow 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
-  -o-transition: box-shadow 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
-  -moz-transition: box-shadow 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
-  -webkit-transition: box-shadow 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
-  transition: box-shadow 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  border: 1px solid var(--medium-gray);
+}
+
+/* @supports (-webkit-transition: none) or (transition: none) {
+  .btn-outline {
+    -webkit-transition: color 300ms var(--animation-timing);
+    transition: color 300ms var(--animation-timing);
+  }
+} */
+
+.btn:hover {
+  color: var(--primary-color);
+  background: var(--white);
+  border: 1px solid var(--black);
+}
+
+.btn-sm {
+  padding: 5px 20px;
 }
 
 hr {

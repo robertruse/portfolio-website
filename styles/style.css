@@ -429,7 +429,7 @@ img {
     top: 50px;
     left: 0;
     z-index: 88;
-    padding: 0 50px;
+    padding: 25px 50px;
     background: var(--white);
 
     -webkit-transform: translateX(-600px);
@@ -465,6 +465,7 @@ img {
     border-bottom: 1px solid var(--border-color);
   }
 
+  .navbar .menu li:nth-child(4),
   .navbar .menu li:last-child {
     border-bottom: none;
   }

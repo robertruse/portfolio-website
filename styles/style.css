@@ -461,7 +461,6 @@ img {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 5px;
     border-bottom: 1px solid var(--border-color);
   }
 
@@ -471,6 +470,7 @@ img {
   }
 
   .navbar .menu a {
+    padding: 25px 50px;
     letter-spacing: 3px;
   }
 

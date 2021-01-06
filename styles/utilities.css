@@ -24,6 +24,7 @@
 }
 
 #lightbox img {
+  position: relative;
   width: auto;
   max-width: 90%;
   max-height: 80%;
@@ -70,8 +71,8 @@
 
 /* @supports (-webkit-transition: none) or (transition: none) {
   .btn-outline {
-    -webkit-transition: color 300ms var(--animation-timing);
-    transition: color 300ms var(--animation-timing);
+    -webkit-transition: color 300ms var(--anim-ease-in-out);
+    transition: color 300ms var(--anim-ease-in-out);
   }
 } */
 
